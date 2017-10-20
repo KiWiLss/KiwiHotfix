@@ -45,6 +45,9 @@
 
 
 
+        <activity android:name=".activity.FaceActivity"/>
+        <activity android:name=".activity.ZxingActivity"/>
+
     </application>
 
 </manifest>
