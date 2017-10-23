@@ -64,6 +64,5 @@ public class CLActivity2 extends AppCompatActivity {
     private void initMeasure() {
         headerHeight = getResources().getDimension(R.dimen.dimen_300);
         minHeaderHeight = getResources().getDimension(R.dimen.abc_action_bar_default_height_material);
-
     }
 }
