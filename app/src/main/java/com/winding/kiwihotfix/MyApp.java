@@ -6,7 +6,7 @@ import android.content.Context;
 import com.taobao.sophix.PatchStatus;
 import com.taobao.sophix.SophixManager;
 import com.taobao.sophix.listener.PatchLoadStatusListener;
-import com.uuzuche.lib_zxing.activity.ZXingLibrary;
+
 
 /**
  * Created by 刘少帅 on 2017/10/20
@@ -48,7 +48,7 @@ public class MyApp extends Application {
     public void onCreate() {
         super.onCreate();
 
-        ZXingLibrary.initDisplayOpinion(this);
+
     }
 
 

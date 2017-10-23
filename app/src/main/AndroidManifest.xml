@@ -11,6 +11,9 @@
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
 
 
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+
     <application
         android:name=".MyApp"
         android:allowBackup="true"
@@ -47,6 +50,7 @@
 
         <activity android:name=".activity.FaceActivity"/>
         <activity android:name=".activity.ZxingActivity"/>
+        <activity android:name=".activity.ScanActivity"/>
 
     </application>
 

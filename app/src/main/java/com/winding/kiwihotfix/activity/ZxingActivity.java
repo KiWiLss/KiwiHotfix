@@ -6,7 +6,6 @@ import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
-import com.uuzuche.lib_zxing.activity.CaptureActivity;
 import com.winding.kiwihotfix.R;
 
 /**
@@ -14,6 +13,9 @@ import com.winding.kiwihotfix.R;
  */
 
 public class ZxingActivity extends AppCompatActivity {
+
+    private String TAG="MMM";
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,8 +26,7 @@ public class ZxingActivity extends AppCompatActivity {
     }
 
     public void scanListener(View view) {
-        Intent intent = new Intent(this, CaptureActivity.class);
-        startActivityForResult(intent, 1);
+
     }
 
     @Override
@@ -33,5 +34,10 @@ public class ZxingActivity extends AppCompatActivity {
         super.onActivityResult(requestCode, resultCode, data);
 
 
+    }
+
+
+    public void customScanListener(View view) {
+        startActivity(new Intent(this,ScanActivity.class));
     }
 }
