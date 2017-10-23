@@ -13,5 +13,8 @@
     <dimen name="spacing_normal">16dp</dimen>
     <dimen name="image_width">120dp</dimen>
     <dimen name="title_margin">20dp</dimen>
+    <dimen name="title_margin_header">250dp</dimen>
+    <dimen name="dimen_300">300dp</dimen>
+    <dimen name="abc_action_bar_default_height_material">30dp</dimen>
 
 </resources>
