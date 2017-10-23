@@ -7,12 +7,26 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="默认扫描界面"
-        android:onClick="scanListener"/>
+        android:text="CoordinatorLayout"
+        android:onClick="scanListener"
+        android:textAllCaps="false"/>
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="自定义扫描界面"
         android:onClick="customScanListener"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="coordinator"
+        android:textAllCaps="false"
+        android:onClick="coordinatorListener"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="底部滚动显示和隐藏"
+        android:textAllCaps="false"
+        android:onClick="coordinatorListener2"/>
+
 </LinearLayout>

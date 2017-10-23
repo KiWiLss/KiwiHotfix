@@ -51,6 +51,11 @@
         <activity android:name=".activity.FaceActivity"/>
         <activity android:name=".activity.ZxingActivity"/>
         <activity android:name=".activity.ScanActivity"/>
+        <activity android:name=".activity.CoordinatorLayoutActivity"/>
+        <activity android:name=".activity.CLActivity"/>
+        <activity android:name=".activity.CLActivity2"/>
+
+
 
     </application>
 

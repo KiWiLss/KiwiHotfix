@@ -6,4 +6,11 @@
 
     <color name="scan_corner_color">#0effc2</color>
 
+
+    <color name="black">#000000</color>
+    <color name="tab_item_bg">#333333</color>
+    <color name="transparent">#FFFFFFFF</color>
+    <color name="white">#FFFFFF</color>
+    <color name="tab_checked">@color/colorPrimary</color>
+    <color name="tab_unchecked">#757575</color>
 </resources>

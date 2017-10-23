@@ -29,11 +29,14 @@ public class ZxingActivity extends AppCompatActivity {
 
     }
 
+    //进入使用coordinatorlayout
     public void scanListener(View view) {
-        Intent intent = new Intent(this, CaptureActivity.class);
-        //是不是显示历史记录按钮
-        //intent.putExtra(ZXingConstants.ScanIsShowHistory,true);
-        startActivityForResult(intent, ZXingConstants.ScanRequltCode);
+//        Intent intent = new Intent(this, CaptureActivity.class);
+//        //是不是显示历史记录按钮
+//        //intent.putExtra(ZXingConstants.ScanIsShowHistory,true);
+//        startActivityForResult(intent, ZXingConstants.ScanRequltCode);
+
+        startActivity(new Intent(this,CoordinatorLayoutActivity.class));
     }
 
     @Override
@@ -64,5 +67,11 @@ public class ZxingActivity extends AppCompatActivity {
     }
 
 
+    public void coordinatorListener(View view) {
+        startActivity(new Intent(this,CLActivity.class));
+    }
 
+    public void coordinatorListener2(View view) {
+        startActivity(new Intent(this,CLActivity2.class));
+    }
 }
