@@ -4,8 +4,12 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
+import android.widget.Toast;
 
+import com.maning.library.zxing.CaptureActivity;
+import com.maning.library.zxing.ZXingConstants;
 import com.winding.kiwihotfix.R;
 
 /**
@@ -26,18 +30,39 @@ public class ZxingActivity extends AppCompatActivity {
     }
 
     public void scanListener(View view) {
-
+        Intent intent = new Intent(this, CaptureActivity.class);
+        //是不是显示历史记录按钮
+        //intent.putExtra(ZXingConstants.ScanIsShowHistory,true);
+        startActivityForResult(intent, ZXingConstants.ScanRequltCode);
     }
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-
+        if (data == null) {
+            return;
+        }
+        if (resultCode == ZXingConstants.ScanRequltCode) {
+            /**
+             * 拿到解析完成的字符串
+             */
+            Log.e(TAG, "onActivityReenter: " );
+            String result = data.getStringExtra(ZXingConstants.ScanResult);
+            Toast.makeText(this, result, Toast.LENGTH_SHORT).show();
+            Log.e(TAG, "onActivityReenter: "+result );
+        }
 
     }
 
 
     public void customScanListener(View view) {
-        startActivity(new Intent(this,ScanActivity.class));
+        //1.跳转：
+        Intent intent = new Intent(this, CaptureActivity.class);
+        //是不是显示历史记录按钮
+        //intent.putExtra(ZXingConstants.ScanIsShowHistory,true);
+        startActivityForResult(intent, ZXingConstants.ScanRequltCode);
     }
+
+
+
 }
