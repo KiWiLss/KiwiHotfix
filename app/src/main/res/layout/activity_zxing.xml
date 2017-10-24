@@ -34,7 +34,12 @@
             android:text="底部滚动显示和隐藏"
             android:textAllCaps="false"
             android:onClick="coordinatorListener2"/>
-
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="snackbar"
+            android:textAllCaps="false"
+            android:onClick="snakbarListener"/>
 
     </LinearLayout>
 

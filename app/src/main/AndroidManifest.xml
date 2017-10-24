@@ -54,7 +54,7 @@
         <activity android:name=".activity.CoordinatorLayoutActivity"/>
         <activity android:name=".activity.CLActivity"/>
         <activity android:name=".activity.CLActivity2"/>
-
+        <activity android:name=".activity.SnackbarActivity"/>
 
 
     </application>

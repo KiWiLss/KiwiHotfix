@@ -74,4 +74,8 @@ public class ZxingActivity extends AppCompatActivity {
     public void coordinatorListener2(View view) {
         startActivity(new Intent(this,CLActivity2.class));
     }
+
+    public void snakbarListener(View view) {
+
+    }
 }
