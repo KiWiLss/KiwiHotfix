@@ -33,9 +33,17 @@
             android:layout_height="wrap_content"
             android:text="添加图片"
             android:onClick="addIconListener"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="工具使用"
+            android:onClick="toolListener"/>
 
-
-
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="工具复杂样式使用"
+            android:onClick="toolComplexListener"/>
 
     </LinearLayout>
 

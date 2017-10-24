@@ -1,5 +1,6 @@
 package com.winding.kiwihotfix.activity;
 
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.design.widget.FloatingActionButton;
@@ -14,6 +15,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.winding.kiwihotfix.R;
+import com.winding.kiwihotfix.utils.SnackbarUtil;
 
 /**
  * Created by 刘少帅 on 2017/10/24
@@ -105,6 +107,23 @@ public class SnackbarActivity extends AppCompatActivity implements View.OnClickL
     }
 
 
+    public void toolListener(View view) {
+        SnackbarUtil.ShortSnackbar(mFab,"hello kitty",SnackbarUtil.Info).show();
+    }
+
+
+    public void toolComplexListener(View view) {
+        Snackbar snackbar= SnackbarUtil.ShortSnackbar(mFab,"妹子删了你发出的消息",SnackbarUtil.Warning).setActionTextColor(Color.RED).setAction("再次发送", new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                SnackbarUtil.LongSnackbar(mFab,"妹子已将你拉黑",SnackbarUtil.Alert).setActionTextColor(Color.WHITE).show();
+            }
+        });
+
+        SnackbarUtil.SnackbarAddView(snackbar,R.layout.snackbar_icon,0);
+
+        snackbar.show();
+    }
 }
 
 
