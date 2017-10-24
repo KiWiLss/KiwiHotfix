@@ -1,7 +1,10 @@
 package com.winding.kiwihotfix.utils;
 
+import android.content.Context;
 import android.graphics.Color;
+import android.graphics.drawable.Drawable;
 import android.support.design.widget.Snackbar;
+import android.support.v4.content.ContextCompat;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -165,6 +168,15 @@ public static void SnackbarAddView( Snackbar snackbar,int layoutId,int index) {
 
     snackbarLayout.addView(add_view,index,p);
 }
+
+    public static void SnackbarAddView(Snackbar snackbar, Context context) {
+        View view = snackbar.getView();
+        TextView tv = (TextView) view.findViewById(R.id.snackbar_text);
+        Drawable d = ContextCompat.getDrawable(context, R.mipmap.ic_launcher);
+        d.setBounds(0, 0, d.getMinimumWidth(), d.getMinimumHeight());
+        tv.setCompoundDrawables(d, null, null, null);   // 给TextView左边添加图标
+        tv.setGravity(Gravity.CENTER);  // 让文字居中
+    }
 
 }
 

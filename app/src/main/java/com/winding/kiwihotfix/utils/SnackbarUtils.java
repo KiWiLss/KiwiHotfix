@@ -40,6 +40,8 @@ public class SnackbarUtils {
 
     private SnackbarUtils(){
         throw new RuntimeException("禁止无参创建实例");
+        //throw new UnsupportedOperationException("cannot be instantiated");
+
     }
 
     public SnackbarUtils(@NonNull Snackbar snackbar){
@@ -186,7 +188,8 @@ public class SnackbarUtils {
      * @param gravity
      */
     public SnackbarUtils gravityFrameLayout(int gravity){
-        FrameLayout.LayoutParams params = new FrameLayout.LayoutParams(mSnackbar.getView().getLayoutParams().width,mSnackbar.getView().getLayoutParams().height);
+        FrameLayout.LayoutParams params = new FrameLayout.LayoutParams(mSnackbar.getView().getLayoutParams().width,
+                mSnackbar.getView().getLayoutParams().height);
         params.gravity = gravity;
         mSnackbar.getView().setLayoutParams(params);
         return new SnackbarUtils(mSnackbar);
