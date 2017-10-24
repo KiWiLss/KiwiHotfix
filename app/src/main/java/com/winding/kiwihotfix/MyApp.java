@@ -3,9 +3,12 @@ package com.winding.kiwihotfix;
 import android.app.Application;
 import android.content.Context;
 
+import com.orhanobut.logger.AndroidLogAdapter;
+import com.orhanobut.logger.Logger;
 import com.taobao.sophix.PatchStatus;
 import com.taobao.sophix.SophixManager;
 import com.taobao.sophix.listener.PatchLoadStatusListener;
+import com.winding.kiwihotfix.utils.LL;
 
 
 /**
@@ -14,6 +17,8 @@ import com.taobao.sophix.listener.PatchLoadStatusListener;
 
 public class MyApp extends Application {
     private final String TAG = "MMM";
+    private static Context context;
+
     @Override
     protected void attachBaseContext(Context base) {
         super.attachBaseContext(base);
@@ -47,9 +52,12 @@ public class MyApp extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
-
-
+        context = getApplicationContext();
+        LL.setIsLog(true);
+        Logger.addLogAdapter(new AndroidLogAdapter());
     }
 
-
+    public static Context getContext(){
+        return context;
+    }
 }

@@ -1,12 +1,12 @@
 package com.winding.kiwihotfix.activity;
 
-import android.graphics.Color;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -15,17 +15,22 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.orhanobut.logger.Logger;
 import com.trycatch.mysnackbar.Prompt;
 import com.trycatch.mysnackbar.TSnackbar;
 import com.winding.kiwihotfix.R;
+import com.winding.kiwihotfix.utils.L;
+import com.winding.kiwihotfix.utils.LL;
+import com.winding.kiwihotfix.utils.SPUtils;
 import com.winding.kiwihotfix.utils.SnackbarUtil;
-import com.winding.kiwihotfix.utils.ToastUtil;
+import com.winding.kiwihotfix.utils.ToastUtils;
 
 /**
  * Created by 刘少帅 on 2017/10/24
  */
 
 public class SnackbarActivity extends AppCompatActivity implements View.OnClickListener{
+
 
     private FloatingActionButton mFab;
 
@@ -61,8 +66,30 @@ public class SnackbarActivity extends AppCompatActivity implements View.OnClickL
 //        snackBar.addIconProgressLoading(0,true,false);
 //        snackBar.show();
 
+        //LL.setIsLog(true);
+        LL.e("********");
+        LL.e("11111111");
+        LL.e("222222222");
+
+        LL.i("");
+        LL.d("");
+
+        L.e("*********");
 
 
+        logeTest();
+    }
+
+    private void logeTest() {
+        String json="{\n" +
+                "  \"books\": [\n" +
+                "   { \"language\":\"Java\" , \"edition\":\"second\" },\n" +
+                "   { \"language\":\"C++\" , \"lastName\":\"fifth\" },\n" +
+                "   { \"language\":\"C\" , \"lastName\":\"third\" }\n" +
+                "  ]\n" +
+                "}";
+
+        Logger.t("MMM").json(json);
     }
 
     private void initView() {
@@ -147,16 +174,17 @@ public class SnackbarActivity extends AppCompatActivity implements View.OnClickL
 
 
     public void toolComplexListener(View view) {
-        Snackbar snackbar= SnackbarUtil.ShortSnackbar(mFab,"妹子删了你发出的消息",SnackbarUtil.Warning).setActionTextColor(Color.RED).setAction("再次发送", new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                SnackbarUtil.LongSnackbar(mFab,"妹子已将你拉黑",SnackbarUtil.Alert).setActionTextColor(Color.WHITE).show();
-            }
-        });
-
-        SnackbarUtil.SnackbarAddView(snackbar,R.layout.snackbar_icon,0);
-
-        snackbar.show();
+//        Snackbar snackbar= SnackbarUtil.ShortSnackbar(mFab,"妹子删了你发出的消息",SnackbarUtil.Warning).setActionTextColor(Color.RED).setAction("再次发送", new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                SnackbarUtil.LongSnackbar(mFab,"妹子已将你拉黑",SnackbarUtil.Alert).setActionTextColor(Color.WHITE).show();
+//            }
+//        });
+//
+//        SnackbarUtil.SnackbarAddView(snackbar,R.layout.snackbar_icon,0);
+//
+//        snackbar.show();
+        SPUtils.save("my","kitty");
     }
 
 
@@ -169,10 +197,12 @@ public class SnackbarActivity extends AppCompatActivity implements View.OnClickL
 //                .bellow(mFab,10,16,16)
 //                .show();
 
-        ToastUtil toastUtil=new ToastUtil();
-        toastUtil.Short(this,"自定义message字体、背景色").setToastColor(Color.WHITE, getResources().getColor(R.color.colorAccent)).show();
+//        ToastUtil toastUtil=new ToastUtil();
+//        toastUtil.Short(this,"自定义message字体、背景色").setToastColor(Color.WHITE, getResources().getColor(R.color.colorAccent)).show();
+        //TT.show("********");
+        ToastUtils.show("jfkdfjei",Gravity.CENTER);
 
-
+        Log.e("MMM", "setPositionListener: "+   SPUtils.get("my") );
     }
 }
 
