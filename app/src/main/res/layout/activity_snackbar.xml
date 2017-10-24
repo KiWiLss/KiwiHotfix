@@ -13,6 +13,31 @@
         android:layout_margin="10dp"
         android:src="@mipmap/android_icon_camera"/>
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="简单显示"
+            android:onClick="simpleListener"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="简单显示点击事件和修改颜色"
+            android:onClick="simpleAndListener"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="添加图片"
+            android:onClick="addIconListener"/>
+
+
+
+
+    </LinearLayout>
 
 
 </android.support.design.widget.CoordinatorLayout>
