@@ -1,7 +1,6 @@
 package com.winding.kiwihotfix.activity;
 
 import android.graphics.Color;
-import android.os.Build;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.design.widget.FloatingActionButton;
@@ -12,8 +11,6 @@ import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.Window;
-import android.view.WindowManager;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -22,7 +19,7 @@ import com.trycatch.mysnackbar.Prompt;
 import com.trycatch.mysnackbar.TSnackbar;
 import com.winding.kiwihotfix.R;
 import com.winding.kiwihotfix.utils.SnackbarUtil;
-import com.winding.kiwihotfix.utils.SnackbarUtils;
+import com.winding.kiwihotfix.utils.ToastUtil;
 
 /**
  * Created by 刘少帅 on 2017/10/24
@@ -37,10 +34,10 @@ public class SnackbarActivity extends AppCompatActivity implements View.OnClickL
         super.onCreate(savedInstanceState);
 
         //设置状态栏透明
-        if (android.os.Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT && android.os.Build.VERSION.SDK_INT<=Build.VERSION_CODES.LOLLIPOP) {
-            Window window = getWindow();
-            window.setFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS, WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
-        }
+//        if (android.os.Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT && android.os.Build.VERSION.SDK_INT<=Build.VERSION_CODES.LOLLIPOP) {
+//            Window window = getWindow();
+//            window.setFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS, WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
+//        }
 
         setContentView(R.layout.activity_snackbar);
 
@@ -49,19 +46,22 @@ public class SnackbarActivity extends AppCompatActivity implements View.OnClickL
         final ViewGroup viewGroup = (ViewGroup) findViewById(android.R.id.content).getRootView();//注意getRootView()最为重要，直接关系到TSnackBar的位置
         //snackBar.setPromptThemBackground(Prompt.SUCCESS).setText("登录成功").setDuration(TSnackbar.LENGTH_LONG).show();
         //snackBar.setPromptThemBackground(Prompt.ERROR).setText("登录失败").setDuration(TSnackbar.LENGTH_LONG).show();
-        //TSnackbar.make(viewGroup, "网络已连接", TSnackbar.LENGTH_LONG, TSnackbar.APPEAR_FROM_TOP_TO_DOWN).setPromptThemBackground(Prompt.SUCCESS).show();
-//        TSnackbar.make(viewGroup, "网络未连接", TSnackbar.LENGTH_LONG, TSnackbar.APPEAR_FROM_TOP_TO_DOWN).setPromptThemBackground(Prompt.WARNING).show();
-        TSnackbar snackBar = TSnackbar.make(viewGroup, "正在加载中...", TSnackbar.LENGTH_INDEFINITE, TSnackbar.APPEAR_FROM_TOP_TO_DOWN);
-        snackBar.setAction("取消", new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-            }
-        });
-        snackBar.setPromptThemBackground(Prompt.SUCCESS);
-        snackBar.addIconProgressLoading(0,true,false);
-        snackBar.show();
+        TSnackbar.make(viewGroup, "网络已连接", TSnackbar.LENGTH_LONG, TSnackbar.APPEAR_FROM_TOP_TO_DOWN)
+         .setPromptThemBackground(Prompt.SUCCESS).show();
+//        TSnackbar.make(viewGroup, "网络未连接", TSnackbar.LENGTH_LONG, TSnackbar.APPEAR_FROM_TOP_TO_DOWN)
+// .setPromptThemBackground(Prompt.WARNING).show();
+//        TSnackbar snackBar = TSnackbar.make(viewGroup, "正在加载中...", TSnackbar.LENGTH_INDEFINITE, TSnackbar.APPEAR_FROM_TOP_TO_DOWN);
+//        snackBar.setAction("取消", new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
 //
+//            }
+//        });
+//        snackBar.setPromptThemBackground(Prompt.SUCCESS);
+//        snackBar.addIconProgressLoading(0,true,false);
+//        snackBar.show();
+
+
 
     }
 
@@ -162,12 +162,17 @@ public class SnackbarActivity extends AppCompatActivity implements View.OnClickL
 
 
     public void setPositionListener(View view) {
-        SnackbarUtils.Custom(mFab,"10s+左右drawable+背景色+圆角带边框+指定View下方",1000*10)
-                .leftAndRightDrawable(R.mipmap.arrow_down,R.mipmap.coupons_food)
-                .backColor(0XFF668899)
-                .radius(16,1,Color.BLUE)
-                .bellow(mFab,10,16,16)
-                .show();
+//        SnackbarUtils.Custom(mFab,"10s+左右drawable+背景色+圆角带边框+指定View下方",1000*10)
+//                .leftAndRightDrawable(R.mipmap.arrow_down,R.mipmap.coupons_food)
+//                .backColor(0XFF668899)
+//                .radius(16,1,Color.BLUE)
+//                .bellow(mFab,10,16,16)
+//                .show();
+
+        ToastUtil toastUtil=new ToastUtil();
+        toastUtil.Short(this,"自定义message字体、背景色").setToastColor(Color.WHITE, getResources().getColor(R.color.colorAccent)).show();
+
+
     }
 }
 
