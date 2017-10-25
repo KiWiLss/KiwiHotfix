@@ -37,6 +37,6 @@ public class CheckAppActivity extends AppCompatActivity {
     }
 
     public void wechat(View view) {
-        CheckUtils.openApp(this,"com.wind.parking_space_map");
+        CheckUtils.openApp(this,zfb);
     }
 }

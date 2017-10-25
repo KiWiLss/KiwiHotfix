@@ -58,6 +58,7 @@
         <activity android:name=".activity.CLActivity2"/>
         <activity android:name=".activity.SnackbarActivity"/>
         <activity android:name=".activity.CheckAppActivity"/>
+        <activity android:name=".activity.SearchViewActivity"/>
 
     </application>
 
