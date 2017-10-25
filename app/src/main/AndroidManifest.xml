@@ -13,6 +13,8 @@
 
     <uses-permission android:name="android.permission.CAMERA"/>
     <uses-permission android:name="android.permission.VIBRATE"/>
+<!--悬浮框权限-->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
 
     <application
         android:name=".MyApp"
@@ -55,7 +57,7 @@
         <activity android:name=".activity.CLActivity"/>
         <activity android:name=".activity.CLActivity2"/>
         <activity android:name=".activity.SnackbarActivity"/>
-
+        <activity android:name=".activity.CheckAppActivity"/>
 
     </application>
 

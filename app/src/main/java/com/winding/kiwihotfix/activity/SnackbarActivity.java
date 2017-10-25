@@ -97,6 +97,9 @@ public class SnackbarActivity extends AppCompatActivity implements View.OnClickL
         mFab.setOnClickListener(this);
     }
 
+
+
+
     @Override
     public void onClick(View view) {
         switch (view.getId()) {
