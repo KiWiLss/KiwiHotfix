@@ -78,4 +78,12 @@ public class ZxingActivity extends AppCompatActivity {
     public void snakbarListener(View view) {
         startActivity(new Intent(this,SnackbarActivity.class));
     }
+
+    public void searchViewListener(View view) {
+        startActivity(new Intent(this,SearchViewActivity.class));
+    }
+
+    public void searchViewListener2(View view) {
+        startActivity(new Intent(this,SearchViewActivity2.class));
+    }
 }

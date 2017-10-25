@@ -40,7 +40,19 @@
             android:text="snackbar"
             android:textAllCaps="false"
             android:onClick="snakbarListener"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="searchView"
+            android:textAllCaps="false"
+            android:onClick="searchViewListener"/>
 
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="searchView2"
+            android:textAllCaps="false"
+            android:onClick="searchViewListener2"/>
     </LinearLayout>
 
 

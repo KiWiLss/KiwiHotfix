@@ -8,4 +8,9 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+
+    <declare-styleable name="SearchView" >
+        <attr name="breadth" format="integer"  />
+        <attr name="search_color" format="color" />
+    </declare-styleable>
 </resources>
