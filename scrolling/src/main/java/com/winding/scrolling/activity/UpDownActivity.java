@@ -1,12 +1,12 @@
 package com.winding.scrolling.activity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
-import android.widget.Toast;
 
 import com.winding.scrolling.R;
 
@@ -27,7 +27,7 @@ public class UpDownActivity extends AppCompatActivity {
         viewById.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(UpDownActivity.this, "------", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(UpDownActivity.this, ModileActivity.class));
             }
         });
 

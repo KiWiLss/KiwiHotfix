@@ -15,6 +15,9 @@
         </activity>
 
         <activity android:name=".activity.UpDownActivity"/>
+        <activity android:name=".activity.BottomActivity"/>
+        <activity android:name=".activity.BottomActivity2"/>
+        <activity android:name=".activity.ModileActivity"/>
     </application>
 
 </manifest>
