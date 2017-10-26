@@ -53,6 +53,12 @@
             android:text="searchView2"
             android:textAllCaps="false"
             android:onClick="searchViewListener2"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="tablayout"
+            android:textAllCaps="false"
+            android:onClick="tablayoutListener"/>
     </LinearLayout>
 
 

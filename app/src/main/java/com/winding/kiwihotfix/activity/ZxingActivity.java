@@ -86,4 +86,10 @@ public class ZxingActivity extends AppCompatActivity {
     public void searchViewListener2(View view) {
         startActivity(new Intent(this,SearchViewActivity2.class));
     }
+
+
+
+    public void tablayoutListener(View view) {
+        startActivity(new Intent(this,TablayoutActivity.class));
+    }
 }
