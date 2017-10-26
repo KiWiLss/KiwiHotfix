@@ -23,4 +23,9 @@ public class ModileActivity extends AppCompatActivity {
     public void bottomListener(View view) {
         startActivity(new Intent(ModileActivity.this, BottomActivity.class));
     }
+
+
+    public void complexListener(View view) {
+        startActivity(new Intent(ModileActivity.this, ComplexCoordinatorActivity.class));
+    }
 }

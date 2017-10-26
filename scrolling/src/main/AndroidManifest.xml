@@ -18,6 +18,7 @@
         <activity android:name=".activity.BottomActivity"/>
         <activity android:name=".activity.BottomActivity2"/>
         <activity android:name=".activity.ModileActivity"/>
+        <activity android:name=".activity.ComplexCoordinatorActivity"/>
     </application>
 
 </manifest>
