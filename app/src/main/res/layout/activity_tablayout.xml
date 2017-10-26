@@ -33,7 +33,8 @@
             android:layout_height="50dp"
             app:tabIndicatorColor="@color/white"
             app:tabTextColor="@color/colorAccent"
-            android:background="#0f0">
+            android:background="#0f0"
+            >
 
         </android.support.design.widget.TabLayout>
 

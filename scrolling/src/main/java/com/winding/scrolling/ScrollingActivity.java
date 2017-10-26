@@ -1,5 +1,6 @@
 package com.winding.scrolling;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.CollapsingToolbarLayout;
 import android.support.design.widget.FloatingActionButton;
@@ -10,6 +11,8 @@ import android.view.Gravity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+
+import com.winding.scrolling.activity.UpDownActivity;
 
 public class ScrollingActivity extends AppCompatActivity {
 
@@ -26,8 +29,9 @@ public class ScrollingActivity extends AppCompatActivity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+//                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+//                        .setAction("Action", null).show();
+                startActivity(new Intent(ScrollingActivity.this, UpDownActivity.class));
             }
         });
         //toolbar.setNavigationIcon();设置左侧返回图标

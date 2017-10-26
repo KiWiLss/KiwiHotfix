@@ -11,6 +11,7 @@ import android.widget.Toast;
 import com.maning.library.zxing.CaptureActivity;
 import com.maning.library.zxing.ZXingConstants;
 import com.winding.kiwihotfix.R;
+import com.winding.kiwihotfix.activity.coordinator.SwipeDeleteActivity;
 
 /**
  * Created by 刘少帅 on 2017/10/20
@@ -91,5 +92,9 @@ public class ZxingActivity extends AppCompatActivity {
 
     public void tablayoutListener(View view) {
         startActivity(new Intent(this,TablayoutActivity.class));
+    }
+
+    public void swipeListener(View view) {
+        startActivity(new Intent(this,SwipeDeleteActivity.class));
     }
 }
