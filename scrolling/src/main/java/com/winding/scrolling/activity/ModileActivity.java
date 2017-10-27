@@ -28,4 +28,8 @@ public class ModileActivity extends AppCompatActivity {
     public void complexListener(View view) {
         startActivity(new Intent(ModileActivity.this, ComplexCoordinatorActivity.class));
     }
+
+    public void appbarListener(View view) {
+        startActivity(new Intent(ModileActivity.this, AppBarActivity.class));
+    }
 }
