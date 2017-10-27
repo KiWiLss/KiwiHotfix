@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <com.winding.kiwihotfix.widget.SearchBarView
+        android:id="@+id/sbv_hw_search"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="8dp"
+        app:layout_collapseMode="pin"
+        app:search_bar_hint_text="@string/string_search_text"
+        app:search_bar_icon="@mipmap/android_icon_camera"/>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="打开"
+        android:onClick="openListener"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="关闭"
+        android:onClick="closeListener"/>
+</LinearLayout>

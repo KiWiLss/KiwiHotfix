@@ -11,6 +11,8 @@ import android.widget.Toast;
 import com.maning.library.zxing.CaptureActivity;
 import com.maning.library.zxing.ZXingConstants;
 import com.winding.kiwihotfix.R;
+import com.winding.kiwihotfix.activity.coordinator.HWActivity;
+import com.winding.kiwihotfix.activity.coordinator.HWSearchActivity;
 import com.winding.kiwihotfix.activity.coordinator.SwipeDeleteActivity;
 
 /**
@@ -25,6 +27,7 @@ public class ZxingActivity extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_zxing);
+
 
 
 
@@ -96,5 +99,13 @@ public class ZxingActivity extends AppCompatActivity {
 
     public void swipeListener(View view) {
         startActivity(new Intent(this,SwipeDeleteActivity.class));
+    }
+
+    public void clickSearchListener(View view) {
+        startActivity(new Intent(this,HWSearchActivity.class));
+    }
+
+    public void coordinatorSearchListener(View view) {
+        startActivity(new Intent(this,HWActivity.class));
     }
 }

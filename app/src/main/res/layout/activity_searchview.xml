@@ -12,10 +12,11 @@
     <android.support.v7.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
-        android:layout_height="?actionBarSize"
+        android:layout_height="50dp"
         android:layout_gravity="center"
         android:background="#6000"
-        android:gravity="center">
+        android:gravity="center"
+        >
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -25,8 +26,8 @@
                 android:id="@+id/dribSearchView"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:paddingTop="18dp"
-                android:paddingBottom="18dp"
+                android:paddingTop="12dp"
+                android:paddingBottom="12dp"
                 app:breadth="2"
                 app:search_color="#0f0"/>
 

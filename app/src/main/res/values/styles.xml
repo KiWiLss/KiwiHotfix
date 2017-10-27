@@ -9,6 +9,11 @@
     </style>
 
 
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+
     <declare-styleable name="SearchView" >
         <attr name="breadth" format="integer"  />
         <attr name="search_color" format="color" />

@@ -155,17 +155,17 @@
         app:startHeight="2dp"
         app:startToolbarPosition="2dp"
         app:startXPosition="2dp"
-        android:visibility="gone"
+
         />
 
 
-    <de.hdodenhof.circleimageview.CircleImageView
-        android:layout_width="@dimen/image_width"
-        android:layout_height="@dimen/image_width"
-        android:layout_gravity="center"
-        android:src="@mipmap/bg"
-        app:border_color="@android:color/white"
-        app:border_width="2dp"
-        app:layout_behavior="com.winding.scrolling.behavior.AvatarImageBehavior"
-        app:finalHeight="@dimen/image_final_width"/>
+    <!--<de.hdodenhof.circleimageview.CircleImageView-->
+        <!--android:layout_width="@dimen/image_width"-->
+        <!--android:layout_height="@dimen/image_width"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:src="@mipmap/bg"-->
+        <!--app:border_color="@android:color/white"-->
+        <!--app:border_width="2dp"-->
+        <!--app:layout_behavior="com.winding.scrolling.behavior.AvatarImageBehavior"-->
+        <!--app:finalHeight="@dimen/image_final_width"/>-->
 </android.support.design.widget.CoordinatorLayout>

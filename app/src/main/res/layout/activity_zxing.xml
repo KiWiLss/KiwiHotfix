@@ -65,6 +65,19 @@
             android:text="swipedelete"
             android:textAllCaps="false"
             android:onClick="swipeListener"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="点击搜索"
+            android:textAllCaps="false"
+            android:onClick="clickSearchListener"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="在coordinatorlayout中搜索"
+            android:textAllCaps="false"
+            android:onClick="coordinatorSearchListener"/>
     </LinearLayout>
 
 

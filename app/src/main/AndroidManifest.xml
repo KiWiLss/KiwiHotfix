@@ -46,10 +46,6 @@
             android:value="MIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCOqxssHas99BqSZoeHjvimIgXaZpeVVUjhzU89gVHhJ8Yip2BYKvsN+juwfPuUECPfI5qXeQp8y2AweeYUCCsbgMSyWjAUyqpw38XDLr1tYLFTTF7aTvj0uspJymKO/wi2D3GlvIBIVo64WAjChorRtoE6aPhLhFzRQEXlWQ6Ie4P+21xDbGaiNwtRHgPmOWSa9Rp9cb4lFbA5nqFxxE1g/V4+5kkNIXXEfOVReSfJKKtYtTQ145bxRrkk3Bw/nPdjVX/Ey7uHWM9JJYghbx0KfGJD9Dh9B+hIbK5ttsZrErIzBmHEXChvUT/FNJiV/1jhavJjZrRpDboTTH007z7zAgMBAAECggEAB8RpBk3XNNhFWhMa7dZq0yCnEOzk88xg22pCFickPg3cS6axKBuu72PgPAuR5s26JjvZ/sUoPQMViY4ZaJ3JOwYXr14ZoAgon1yPd8Djr0DEZrSRtXD3PNuuh7XtB7v6zW6p0Uwh785GluK0F2Mby68T+goc+n+KThohtArVL7j04WcibfmZ2flG+gijvBsHaNXQJeVdWalL6Nfj8fqgcuqdZF/0SSnje61B4igMkbqlnr/X/0dPF1Bup162YHYsCbSgSHXWbprz9xiTvDHXdFIBZaB/dkQMjPWXMRIj49NlGgik9WXAKaDWj952ZqyxJFZCs2Mb2vlGY2cvaTNBgQKBgQDRV7NszGNHa46pSrnEnB0jEUQdakiRSZSQItLfE4hwgyFiWRa1wrmk0/NuYP3a2iFZN1m96cwyd29SkTkOJ8FxvrjRBh6Lr0TWFnAoutLYXEm5sV8b8JW+T4Z31pAX4Yfu/8NX2aaVPNpD6SRgC6VuDWakG7liaWOfJUPrWo4vjQKBgQCudzoHNLzLJ4Juaksm12afZSe78p8vOSl6oEf4w1vVAc0JvvhIBIJ12YYyGj6MhOWAhfzX8E128UQH4eOA816kpbZemFqclWVLtK21KDghzIPBR9Piqgqku+cQOqSal/FwuuKuOADxYE/wVD2wtcCsw2n4oxlI89EJ8sysOp5IfwKBgB8BuW60+0N51+CVU9yeLuahyQ/+TQ9P8bRDpC4sa3oWwhwaC/YSCIM0bYr8zLzcsDHRs/YgKgGTlSaKogPJuapKUH+NQ3r3E+AN5MDzowUu7jCV5/twcA2HI+ieHCudWQ/6TAm4ECdsovuKDbw4HWGmlHxcKuI7r+jDkULL3+GFAoGAECzFmH1vM3aKRSpdpVA7F3QNZwNrdrlZ+yB5C7sw/GKaW9j0s9iXL83m/yYnvmdjz7KcanjA9dIQeJqcuQvXLnSen86IOBQxu/8YS79a1OddH8JFBrK1Iei512tYb2y+2bC562UN0VMYljN5NLTlFB9Z589XPMg+DSoRh7Y3jokCgYEAiQTCgxQteO2G7P8luqiWw77bx2s7msRJGPB5EM+0WsC1qrOpIvBuBXMRrbvc9rWPTSJBhZNgKhqP7y4cXYiPUW25fSZEbG5r1XAxJE6PIySHLzFkRVjfHe8gLW14csJjbotA41SvEWT7kFa86H4J10fd7hiqlZiI008TEuAn604=" />
 
 
-
-
-
-
         <activity android:name=".activity.FaceActivity"/>
         <activity android:name=".activity.ZxingActivity"/>
         <activity android:name=".activity.ScanActivity"/>
@@ -63,7 +59,8 @@
         <activity android:name=".activity.SearchViewActivity2"/>
         <activity android:name=".activity.TablayoutActivity"/>
         <activity android:name=".activity.coordinator.SwipeDeleteActivity"/>
-
+        <activity android:name=".activity.coordinator.HWSearchActivity"/>
+        <activity android:name=".activity.coordinator.HWActivity"/>
     </application>
 
 </manifest>
