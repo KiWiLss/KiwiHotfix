@@ -36,4 +36,8 @@ public class ModileActivity extends AppCompatActivity {
     public void superListener(View view) {
         startActivity(new Intent(ModileActivity.this, SuperTextActivity.class));
     }
+
+    public void galleryListener(View view) {
+        startActivity(new Intent(ModileActivity.this, GalleryActivity.class));
+    }
 }

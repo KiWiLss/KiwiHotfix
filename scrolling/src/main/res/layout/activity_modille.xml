@@ -32,5 +32,11 @@
             android:text="superText"
             android:textAllCaps="false"
             android:onClick="superListener"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="gallery"
+            android:textAllCaps="false"
+            android:onClick="galleryListener"/>
     </LinearLayout>
 </ScrollView>
