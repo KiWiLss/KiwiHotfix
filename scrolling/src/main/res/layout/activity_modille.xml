@@ -26,5 +26,11 @@
             android:text="appbar越界"
             android:textAllCaps="false"
             android:onClick="appbarListener"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="superText"
+            android:textAllCaps="false"
+            android:onClick="superListener"/>
     </LinearLayout>
 </ScrollView>

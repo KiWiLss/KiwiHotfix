@@ -32,4 +32,8 @@ public class ModileActivity extends AppCompatActivity {
     public void appbarListener(View view) {
         startActivity(new Intent(ModileActivity.this, AppBarActivity.class));
     }
+
+    public void superListener(View view) {
+        startActivity(new Intent(ModileActivity.this, SuperTextActivity.class));
+    }
 }

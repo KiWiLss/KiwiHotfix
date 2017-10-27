@@ -20,6 +20,8 @@
         <activity android:name=".activity.ModileActivity"/>
         <activity android:name=".activity.ComplexCoordinatorActivity"/>
         <activity android:name=".activity.AppBarActivity"/>
+
+        <activity android:name=".activity.SuperTextActivity"/>
     </application>
 
 </manifest>

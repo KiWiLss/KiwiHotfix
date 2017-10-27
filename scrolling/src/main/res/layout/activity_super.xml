@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:stv="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#fff">
+
+
+        <com.allen.library.SuperButton
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="圆角边框"
+            app:sCornersRadius="10dp"
+            app:sSolidColor="@color/colorAccent"
+            android:textColor="@color/colorPrimaryDark"
+            />
+
+
+        <com.allen.library.SuperTextView
+            android:id="@+id/stv_super_one"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            app:sLeftIconRes="@mipmap/wechat"
+            app:sLeftTextString="左侧文字"
+            app:sCenterTextString="中间文字"
+            app:sRightTextString="右侧文字"
+            app:sDividerLineType="bottom"
+            app:sDividerLineHeight="1dp"
+            app:sBottomDividerLineMarginLeft="20dp"
+
+            app:sUseRipple="true"
+            />
+
+        <com.allen.library.SuperTextView
+            android:id="@+id/stv_super_two"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            app:sLeftIconRes="@mipmap/two"
+            app:sLeftTopTextString="左侧上部"
+            app:sLeftBottomTextString="左侧底部"
+
+            app:sCenterTopTextString="中间上部"
+            app:sCenterBottomTextString="中间底部"
+
+            app:sRightTextString="右侧文字"
+            app:sRightViewMarginRight="0dp"
+            app:sUseRipple="true"
+
+            />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="?selectableItemBackground"
+            android:clickable="true"/>
+
+
+
+    </LinearLayout>
+</ScrollView>

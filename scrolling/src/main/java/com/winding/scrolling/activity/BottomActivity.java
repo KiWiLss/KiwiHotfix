@@ -62,6 +62,7 @@ public class BottomActivity extends AppCompatActivity {
         mRv.setAdapter(upDowmAdapter);
 
 
+
 //        design_bottom_sheet_bar.setOnClickListener(new View.OnClickListener() {
 //            @Override
 //            public void onClick(View v) {
