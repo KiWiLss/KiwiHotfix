@@ -61,6 +61,8 @@
         <activity android:name=".activity.coordinator.SwipeDeleteActivity"/>
         <activity android:name=".activity.coordinator.HWSearchActivity"/>
         <activity android:name=".activity.coordinator.HWActivity"/>
+
+        <activity android:name=".activity.coordinator.ELMActivity"/>
     </application>
 
 </manifest>

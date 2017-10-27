@@ -49,7 +49,7 @@ public class HWActivity extends AppCompatActivity {
             @Override
             public void onOffsetChanged(AppBarLayout appBarLayout, int verticalOffset) {
                 float alpha = Math.abs((float) verticalOffset / appBarLayout.getTotalScrollRange());
-                toolbar.setAlpha(alpha);
+                toolbar.setAlpha(alpha);//在toolbar里面设置背景时用到了:如果在CollapsingToolbarLayout里面设置 app:contentScrim="@color/colorAccent"就用到这个了
                 if (alpha >= 1) {
                     searchbarview.startOpen();
                 } else {
@@ -57,6 +57,9 @@ public class HWActivity extends AppCompatActivity {
                 }
             }
         });
+
+
+
 
     }
 }

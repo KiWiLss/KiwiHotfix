@@ -16,7 +16,7 @@
             android:id="@+id/ctl_hw_ctl"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            app:contentScrim="@android:color/transparent"
+            app:contentScrim="@color/colorAccent"
             app:layout_scrollFlags="scroll|exitUntilCollapsed|snap"
             >
 
@@ -38,7 +38,7 @@
                 android:gravity="top"
                 app:layout_collapseMode="pin"
                 app:popupTheme="@style/AppTheme.PopupOverlay"
-                android:background="@color/colorPrimary"
+
                 />
             <com.winding.kiwihotfix.widget.SearchBarView
                 android:id="@+id/sbv_hw_searchView"
