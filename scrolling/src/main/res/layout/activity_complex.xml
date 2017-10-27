@@ -9,21 +9,21 @@
     >
 
     <android.support.design.widget.AppBarLayout
-        android:id="@+id/main.appbar"
+        android:id="@+id/main_appbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
         >
 
         <android.support.design.widget.CollapsingToolbarLayout
-            android:id="@+id/main.collapsing"
+            android:id="@+id/main_collapsing"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:layout_scrollFlags="scroll|exitUntilCollapsed|snap"
             >
 
             <ImageView
-                android:id="@+id/main.imageview.placeholder"
+                android:id="@+id/main_imageview_placeholder"
                 android:layout_width="match_parent"
                 android:layout_height="300dp"
                 android:scaleType="centerCrop"
@@ -34,7 +34,7 @@
                 />
 
             <FrameLayout
-                android:id="@+id/main.framelayout.title"
+                android:id="@+id/main_framelayout_title"
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
                 android:layout_gravity="bottom|center_horizontal"
@@ -45,7 +45,7 @@
                 >
 
                 <LinearLayout
-                    android:id="@+id/main.linearlayout.title"
+                    android:id="@+id/main_linearlayout_title"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
@@ -107,11 +107,11 @@
     </android.support.v4.widget.NestedScrollView>
 
     <android.support.v7.widget.Toolbar
-        android:id="@+id/main.toolbar"
+        android:id="@+id/main_toolbar"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
         android:background="@color/colorPrimary"
-        app:layout_anchor="@id/main.framelayout.title"
+        app:layout_anchor="@id/main_framelayout_title"
         app:theme="@style/ThemeOverlay.AppCompat.Dark"
         app:title=""
         >
@@ -125,10 +125,11 @@
             <Space
                 android:layout_width="@dimen/image_final_width"
                 android:layout_height="@dimen/image_final_width"
+                android:layout_gravity="center_vertical"
                 />
 
             <TextView
-                android:id="@+id/main.textview.title"
+                android:id="@+id/main_textview_title"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_marginLeft="8dp"
@@ -154,5 +155,17 @@
         app:startHeight="2dp"
         app:startToolbarPosition="2dp"
         app:startXPosition="2dp"
+        android:visibility="gone"
         />
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="@dimen/image_width"
+        android:layout_height="@dimen/image_width"
+        android:layout_gravity="center"
+        android:src="@mipmap/bg"
+        app:border_color="@android:color/white"
+        app:border_width="2dp"
+        app:layout_behavior="com.winding.scrolling.behavior.AvatarImageBehavior"
+        app:finalHeight="@dimen/image_final_width"/>
 </android.support.design.widget.CoordinatorLayout>
