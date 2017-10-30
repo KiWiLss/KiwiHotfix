@@ -26,6 +26,7 @@
         <activity android:name=".activity.SuperTextActivity"/>
         <activity android:name=".activity.GalleryActivity"/>
         <activity android:name=".activity.DataActivity"/>
+        <activity android:name=".activity.SqDataActivity"/>
     </application>
 
 </manifest>

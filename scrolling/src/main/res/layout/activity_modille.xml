@@ -44,5 +44,12 @@
             android:text="data"
             android:textAllCaps="false"
             android:onClick="dataListener"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="data2"
+            android:textAllCaps="false"
+            android:onClick="dataListener2"/>
     </LinearLayout>
 </ScrollView>

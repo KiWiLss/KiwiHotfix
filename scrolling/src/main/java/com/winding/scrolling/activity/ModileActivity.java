@@ -44,4 +44,8 @@ public class ModileActivity extends AppCompatActivity {
     public void dataListener(View view) {
         startActivity(new Intent(ModileActivity.this, DataActivity.class));
     }
+
+    public void dataListener2(View view) {
+        startActivity(new Intent(ModileActivity.this, SqDataActivity.class));
+    }
 }
