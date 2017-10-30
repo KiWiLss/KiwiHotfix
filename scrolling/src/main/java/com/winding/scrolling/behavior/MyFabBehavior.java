@@ -54,7 +54,7 @@ public void onNestedPreScroll(CoordinatorLayout coordinatorLayout, View child, V
 
 //隐藏时的动画
 private void hide(final View view) {
-    ViewPropertyAnimator animator = view.animate().translationY(viewY).setInterpolator(INTERPOLATOR).setDuration(200);
+    ViewPropertyAnimator animator = view.animate().translationY(viewY).setInterpolator(INTERPOLATOR).setDuration(500);
 
     animator.setListener(new Animator.AnimatorListener() {
         @Override
@@ -82,7 +82,7 @@ private void hide(final View view) {
 
 //显示时的动画
 private void show(final View view) {
-    ViewPropertyAnimator animator = view.animate().translationY(0).setInterpolator(INTERPOLATOR).setDuration(200);
+    ViewPropertyAnimator animator = view.animate().translationY(0).setInterpolator(INTERPOLATOR).setDuration(500);
     animator.setListener(new Animator.AnimatorListener() {
         @Override
         public void onAnimationStart(Animator animator) {
