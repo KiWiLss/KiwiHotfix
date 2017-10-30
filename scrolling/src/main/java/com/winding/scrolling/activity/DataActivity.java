@@ -1,6 +1,7 @@
 package com.winding.scrolling.activity;
 
 import android.content.ContentValues;
+import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
@@ -10,6 +11,7 @@ import android.view.View;
 import com.winding.scrolling.R;
 import com.winding.scrolling.model.News;
 
+import org.litepal.LitePal;
 import org.litepal.crud.DataSupport;
 
 import java.util.Date;
@@ -33,6 +35,7 @@ public class DataActivity extends AppCompatActivity {
         //SQLiteDatabase db = Connector.getDatabase();
         //便于操作sq语句
 
+        SQLiteDatabase database = LitePal.getDatabase();
 
 
     }
