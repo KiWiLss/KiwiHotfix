@@ -40,4 +40,8 @@ public class ModileActivity extends AppCompatActivity {
     public void galleryListener(View view) {
         startActivity(new Intent(ModileActivity.this, GalleryActivity.class));
     }
+
+    public void dataListener(View view) {
+        startActivity(new Intent(ModileActivity.this, DataActivity.class));
+    }
 }

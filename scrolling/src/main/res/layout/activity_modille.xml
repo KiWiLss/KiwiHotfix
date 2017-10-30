@@ -38,5 +38,11 @@
             android:text="gallery"
             android:textAllCaps="false"
             android:onClick="galleryListener"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="data"
+            android:textAllCaps="false"
+            android:onClick="dataListener"/>
     </LinearLayout>
 </ScrollView>
