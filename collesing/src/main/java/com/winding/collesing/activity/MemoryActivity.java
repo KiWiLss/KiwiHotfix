@@ -54,19 +54,32 @@ public class MemoryActivity extends AppCompatActivity {
     }
 
     public void updateListener(View view) {
-
+        User mUser = new User((long) 2, "Two");
+        mUserDao.update(mUser);
     }
 
     public void deleteOneListener(View view) {
+        //根据主键删除
+        //mUserDao.deleteByKey((long)3);
+        //根据条件删除
 
+        List<User> list = mUserDao.queryBuilder().where(UserDao.Properties.Id.between(2, 4)).build().list();
+        for (int i = 0; i < list.size(); i++) {
+            Log.e(TAG, "deleteOneListener: "+list.get(i).getName());
+        }
     }
 
     public void addListener(View view) {
-        User mUser = new User((long) 2, "anye2");
-        mUserDao.insert(mUser);//添加一个
+        for (int i = 0; i < 5; i++) {
+            User mUser = new User(null, "anye"+i);
+            mUserDao.insert(mUser);//添加一个
+        }
 
-        User mUser2 = new User((long) 3, "anye3");
-        mUserDao.insert(mUser2);//添加一个
+
+
+//        User mUser3 = new User(null, "kitty");
+//        mUserDao.insert(mUser3);//添加一个
+
     }
 
     public void createListener(View view) {
@@ -74,6 +87,6 @@ public class MemoryActivity extends AppCompatActivity {
     }
 
     public void deleteDbListener(View view) {
-
+        mUserDao.deleteAll();
     }
 }
