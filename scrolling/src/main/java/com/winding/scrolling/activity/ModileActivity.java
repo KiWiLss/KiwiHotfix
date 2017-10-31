@@ -52,4 +52,9 @@ public class ModileActivity extends AppCompatActivity {
     public void weekListener(View view) {
         startActivity(new Intent(ModileActivity.this, WeekActivity.class));
     }
+
+
+    public void constraintListener(View view) {
+        startActivity(new Intent(ModileActivity.this, ConstraintActivity.class));
+    }
 }
