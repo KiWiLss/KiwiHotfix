@@ -48,4 +48,8 @@ public class ModileActivity extends AppCompatActivity {
     public void dataListener2(View view) {
         startActivity(new Intent(ModileActivity.this, SqDataActivity.class));
     }
+
+    public void weekListener(View view) {
+        startActivity(new Intent(ModileActivity.this, WeekActivity.class));
+    }
 }

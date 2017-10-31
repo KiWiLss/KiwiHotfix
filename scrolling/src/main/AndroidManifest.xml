@@ -27,6 +27,7 @@
         <activity android:name=".activity.GalleryActivity"/>
         <activity android:name=".activity.DataActivity"/>
         <activity android:name=".activity.SqDataActivity"/>
+        <activity android:name=".activity.WeekActivity"/>
     </application>
 
 </manifest>
