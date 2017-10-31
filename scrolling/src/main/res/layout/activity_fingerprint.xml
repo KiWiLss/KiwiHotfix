@@ -1,7 +1,186 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_introduce"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:elevation="3dp"
+    android:visibility="visible">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@mipmap/bg"/>
+
+    <!--<ImageView-->
+        <!--android:id="@+id/iv_introduce_back"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:background="@color/colorBlue_t" />-->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbarSize="7dp"
+        android:scrollbarStyle="outsideOverlay"
+        android:scrollbarThumbVertical="@drawable/scroll_thumb"
+        android:scrollbars="vertical"
+        android:background="#b5ffffff">
+
+
+        <LinearLayout
+            android:id="@+id/ll_introduce_text"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp">
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="fingerprint"
+                android:onClick="fingerprintClick"/>
+            <TextView
+                android:id="@+id/tv_introduce"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:autoLink="web"
+                android:textColor="@color/colorBlue"
+                android:textSize="18sp"
+                android:text="fjeioooooooooooooooooooooo
+fjeioioioioioioioioioioioioioioioioioioioioio
+fjeiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiljf"/>
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:autoLink="web"
+                android:textColor="@color/colorBlue"
+                android:textSize="18sp"
+                android:text="fjeioooooooooooooooooooooo
+fjeioioioioioioioioioioioioioioioioioioioioio
+fjeiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiljf"/>
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:autoLink="web"
+                android:textColor="@color/colorBlue"
+                android:textSize="18sp"
+                android:text="fjeioooooooooooooooooooooo
+fjeioioioioioioioioioioioioioioioioioioioioio
+fjeiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiljf"/>
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:autoLink="web"
+                android:textColor="@color/colorBlue"
+                android:textSize="18sp"
+                android:text="fjeioooooooooooooooooooooo
+fjeioioioioioioioioioioioioioioioioioioioioio
+fjeiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiljf"/>
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:autoLink="web"
+                android:textColor="@color/colorBlue"
+                android:textSize="18sp"
+                android:text="fjeioooooooooooooooooooooo
+fjeioioioioioioioioioioioioioioioioioioioioio
+fjeiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiljf"/>  <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:autoLink="web"
+            android:textColor="@color/colorBlue"
+            android:textSize="18sp"
+            android:text="fjeioooooooooooooooooooooo
+fjeioioioioioioioioioioioioioioioioioioioioio
+fjeiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiljf"/>  <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:autoLink="web"
+            android:textColor="@color/colorBlue"
+            android:textSize="18sp"
+            android:text="fjeioooooooooooooooooooooo
+fjeioioioioioioioioioioioioioioioioioioioioio
+fjeiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiljf"/>  <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:autoLink="web"
+            android:textColor="@color/colorBlue"
+            android:textSize="18sp"
+            android:text="fjeioooooooooooooooooooooo
+fjeioioioioioioioioioioioioioioioioioioioioio
+fjeiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiljf"/>  <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:autoLink="web"
+            android:textColor="@color/colorBlue"
+            android:textSize="18sp"
+            android:text="fjeioooooooooooooooooooooo
+fjeioioioioioioioioioioioioioioioioioioioioio
+fjeiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiljf"/>  <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:autoLink="web"
+            android:textColor="@color/colorBlue"
+            android:textSize="18sp"
+            android:text="fjeioooooooooooooooooooooo
+fjeioioioioioioioioioioioioioioioioioioioioio
+fjeiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiljf"/>  <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:autoLink="web"
+            android:textColor="@color/colorBlue"
+            android:textSize="18sp"
+            android:text="fjeioooooooooooooooooooooo
+fjeioioioioioioioioioioioioioioioioioioioioio
+fjeiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiljf"/>  <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:autoLink="web"
+            android:textColor="@color/colorBlue"
+            android:textSize="18sp"
+            android:text="fjeioooooooooooooooooooooo
+fjeioioioioioioioioioioioioioioioioioioioioio
+fjeiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiljf"/>  <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:autoLink="web"
+            android:textColor="@color/colorBlue"
+            android:textSize="18sp"
+            android:text="fjeioooooooooooooooooooooo
+fjeioioioioioioioioioioioioioioioioioioioioio
+fjeiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiljf"/>  <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:autoLink="web"
+            android:textColor="@color/colorBlue"
+            android:textSize="18sp"
+            android:text="fjeioooooooooooooooooooooo
+fjeioioioioioioioioioioioioioioioioioioioioio
+fjeiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiljf"/>  <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:autoLink="web"
+            android:textColor="@color/colorBlue"
+            android:textSize="18sp"
+            android:text="fjeioooooooooooooooooooooo
+fjeioioioioioioioioioioioioioioioioioioioioio
+fjeiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiljf"/>
 
 
 
@@ -10,4 +189,23 @@
 
 
 
-</LinearLayout>
+
+
+
+
+            <TextView
+                android:id="@+id/tv_introduce_foot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:autoLink="web"
+                android:textColor="@color/colorBlue"
+                android:text="jfheihfieeeeeeeeeeeeeeeee
+jfieeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</RelativeLayout>

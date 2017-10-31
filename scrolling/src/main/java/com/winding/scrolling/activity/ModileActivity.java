@@ -55,6 +55,6 @@ public class ModileActivity extends AppCompatActivity {
 
 
     public void constraintListener(View view) {
-        startActivity(new Intent(ModileActivity.this, ConstraintActivity.class));
+        startActivity(new Intent(ModileActivity.this, FingerprintActivity.class));
     }
 }
