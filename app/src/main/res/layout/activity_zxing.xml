@@ -78,6 +78,13 @@
             android:text="在coordinatorlayout中搜索"
             android:textAllCaps="false"
             android:onClick="coordinatorSearchListener"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="textview图文混排"
+            android:textAllCaps="false"
+            android:onClick="textviewListener"/>
     </LinearLayout>
 
 

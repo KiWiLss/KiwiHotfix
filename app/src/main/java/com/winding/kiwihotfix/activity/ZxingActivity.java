@@ -108,4 +108,9 @@ public class ZxingActivity extends AppCompatActivity {
     public void coordinatorSearchListener(View view) {
         startActivity(new Intent(this,HWActivity.class));
     }
+
+
+    public void textviewListener(View view) {
+        startActivity(new Intent(this,TextViewActvitiy.class));
+    }
 }
