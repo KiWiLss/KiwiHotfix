@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:custom="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <com.jungly.gridpasswordview.GridPasswordView
+        android:id="@+id/gpv_pwd_number"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+
+        app:gpvTextColor="#2196F3"
+        app:gpvTextSize="25sp"
+        app:gpvLineColor="#2196F3"
+        app:gpvLineWidth="1dp"
+        app:gpvGridColor="#ffff00"
+        app:gpvPasswordLength="6"
+        app:gpvPasswordTransformation="*"
+        app:gpvPasswordType="numberPassword"/>
+
+    <com.jungly.gridpasswordview.GridPasswordView
+        android:id="@+id/gpv_pwd_textpassword"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        app:gpvTextColor="#219600"
+        app:gpvTextSize="25sp"
+        app:gpvLineColor="#219600"
+        app:gpvLineWidth="1dp"
+        app:gpvGridColor="#ffffff"
+        app:gpvPasswordLength="6"
+        app:gpvPasswordTransformation="!"
+        app:gpvPasswordType="textPassword"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="清空"
+        android:onClick="clearPwd"/>
+
+
+    <com.github.glomadrian.dashedcircularprogress.DashedCircularProgress
+        android:id="@+id/simple"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+
+        custom:external_color="#1affffff"
+        custom:base_color="#6effffff"
+        custom:min="0"
+        custom:max="999"
+        custom:progress_color="#000000"
+        custom:progress_icon="@drawable/my_awesome_icon"
+        custom:duration="3500"
+        />
+</LinearLayout>
