@@ -11,6 +11,7 @@ import android.widget.Toast;
 import com.daimajia.numberprogressbar.NumberProgressBar;
 import com.daimajia.numberprogressbar.OnProgressBarListener;
 import com.winding.password.R;
+import com.winding.password.utils.CircleBar;
 import com.winding.password.widget.RoundProgressBar;
 import com.winding.password.widget.WaveProgressView;
 
@@ -76,6 +77,15 @@ public class BarActivity extends AppCompatActivity {
                 return 0;
             }
         });
+
+        CircleBar cb = (CircleBar) findViewById(R.id.cb);
+        cb.setMaxstepnumber(100);
+        //设置单色进度条
+       // cb.setColor(0xff568951);
+        //设置渐变色
+        int[] mColors = new int[]{0xFF123456, 0xFF369852, 0xFF147852};
+        cb.setShaderColor(mColors);
+        cb.update(50, 3000);
     }
     int mPb;
     public void addListener(View view) {

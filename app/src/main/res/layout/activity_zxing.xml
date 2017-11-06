@@ -85,6 +85,12 @@
             android:text="textview图文混排"
             android:textAllCaps="false"
             android:onClick="textviewListener"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="circle"
+            android:textAllCaps="false"
+            android:onClick="circleListener"/>
     </LinearLayout>
 
 

@@ -20,7 +20,9 @@
         android:id="@+id/tv_main_leftTop"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="hello montithy"/>
+        android:text="hello montithy"
+        tools:layout_editor_absoluteY="82dp"
+        tools:layout_editor_absoluteX="98dp" />
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -46,4 +48,19 @@
         app:layout_constraintTop_toBottomOf="@id/tv_main_leftTop"
         android:onClick="zxingListener"
         />
+
+    <com.dinuscxj.progressbar.CircleProgressBar
+        android:id="@+id/line_progress"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:style="solid_line"
+        app:background_color="@color/black"
+        android:background="#f00"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="133dp" />
+
 </android.support.constraint.ConstraintLayout>

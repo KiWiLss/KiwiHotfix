@@ -113,4 +113,8 @@ public class ZxingActivity extends AppCompatActivity {
     public void textviewListener(View view) {
         startActivity(new Intent(this,TextViewActvitiy.class));
     }
+
+    public void circleListener(View view) {
+        startActivity(new Intent(this,CircleActivity.class));
+    }
 }

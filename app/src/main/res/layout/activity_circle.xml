@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <com.dinuscxj.progressbar.CircleProgressBar
+        android:id="@+id/line_progress"
+        android:layout_width="50dp"
+        android:layout_height="50dp" />
+
+    <com.dinuscxj.progressbar.CircleProgressBar
+        android:id="@+id/solid_progress"
+        app:style="solid"
+        app:progress_text_color="@color/colorAccent"
+        app:progress_stroke_width="3dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp" />
+
+    <com.dinuscxj.progressbar.CircleProgressBar
+        android:id="@+id/custom_progress1"
+        app:style="line"
+        app:progress_stroke_width="1dp"
+        app:progress_background_color="@color/colorAccent"
+        app:progress_start_color="@color/colorPrimaryDark"
+        app:progress_end_color="@color/colorPrimary"
+        app:progress_text_color="@color/scan_corner_color"
+        android:layout_width="50dp"
+        android:layout_height="50dp" />
+
+    <com.dinuscxj.progressbar.CircleProgressBar
+        android:id="@+id/custom_progress2"
+        app:style="solid"
+        app:progress_shader="radial"
+        app:progress_stroke_width="1dp"
+        app:progress_text_format_pattern="0"
+        app:progress_background_color="@color/colorPrimary"
+        app:progress_start_color="@color/scan_corner_color"
+        app:progress_text_color="@color/colorAccent"
+        android:layout_width="50dp"
+        android:layout_height="50dp" />
+
+    <com.dinuscxj.progressbar.CircleProgressBar
+        android:id="@+id/custom_progress3"
+        app:style="line"
+        app:line_width="2dp"
+        app:line_count="30"
+        app:progress_stroke_width="1dp"
+        app:progress_text_size="18sp"
+        app:progress_background_color="@color/scan_corner_color"
+        app:progress_start_color="@color/colorAccent"
+        app:progress_text_color="@color/colorPrimary"
+        android:layout_width="50dp"
+        android:layout_height="50dp" />
+
+    <com.dinuscxj.progressbar.CircleProgressBar
+        android:id="@+id/custom_progress4"
+        app:style="solid_line"
+        app:progress_stroke_width="4dp"
+        app:line_width="4dp"
+        app:line_count="30"
+        app:progress_stroke_cap="round"
+        app:progress_shader="sweep"
+        app:progress_background_color="@color/colorAccent"
+        app:progress_start_color="@color/scan_corner_color"
+        app:progress_end_color="@android:color/transparent"
+        app:progress_text_color="@color/scan_corner_color"
+        android:layout_width="50dp"
+        android:layout_height="50dp" />
+
+    <com.dinuscxj.progressbar.CircleProgressBar
+        android:id="@+id/custom_progress5"
+
+        app:style="solid_line"
+        app:progress_stroke_width="3dp"
+        app:progress_background_color="@color/scan_corner_color"
+        app:progress_start_color="@color/scan_corner_color"
+        app:progress_end_color="@color/colorAccent"
+        app:progress_text_color="@color/colorPrimary"
+        app:background_color="@color/colorAccent"
+        android:layout_width="50dp"
+        android:layout_height="50dp" />
+
+
+    <com.dinuscxj.progressbar.CircleProgressBar
+        android:id="@+id/custom_progress6"
+        app:style="line"
+        app:draw_progress_text="false"
+        app:progress_background_color="@color/scan_corner_color"
+        app:progress_start_color="@color/scan_corner_color"
+        app:progress_text_color="@color/colorAccent"
+        android:layout_width="50dp"
+        android:layout_height="50dp" />
+
+
+</LinearLayout>

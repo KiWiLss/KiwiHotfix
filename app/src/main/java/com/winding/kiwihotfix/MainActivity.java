@@ -1,5 +1,6 @@
 package com.winding.kiwihotfix;
 
+import android.animation.ValueAnimator;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Build;
@@ -10,6 +11,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Toast;
 
+import com.dinuscxj.progressbar.CircleProgressBar;
 import com.winding.kiwihotfix.activity.CheckAppActivity;
 import com.winding.kiwihotfix.activity.ZxingActivity;
 
@@ -26,6 +28,18 @@ public class MainActivity extends AppCompatActivity {
         // queryAndLoadNewPatch不可放在attachBaseContext 中，否则无网络权限，建议放在后面任意时刻，如onCreate中
         //SophixManager.getInstance().queryAndLoadNewPatch();
 
+        final CircleProgressBar lineProgress = (CircleProgressBar) findViewById(R.id.line_progress);
+        ValueAnimator animator = ValueAnimator.ofInt(0, 100);
+        animator.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
+            @Override
+            public void onAnimationUpdate(ValueAnimator animation) {
+                int progress = (int) animation.getAnimatedValue();
+              lineProgress.setProgress(progress);
+            }
+        });
+        //animator.setRepeatCount(ValueAnimator.INFINITE);
+        animator.setDuration(4000);
+        animator.start();
 
     }
 
