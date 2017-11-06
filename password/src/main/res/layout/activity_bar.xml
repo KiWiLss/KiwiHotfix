@@ -35,6 +35,29 @@
        app:progress_text_size="18sp"
         app:progress_text_color="#f0f"
         />
+
+    <ProgressBar
+        android:id="@+id/progressBar2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="?android:attr/progressBarStyleLarge"
+        />
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:indeterminateDrawable="@drawable/progressbar"  />
+
+    <ProgressBar
+        android:id="@+id/pb_bar_pb"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:max="100"
+        android:progress="50"
+        android:progressDrawable="@drawable/progressbar2"
+        />
+
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -49,14 +72,26 @@
         android:layout_alignLeft="@+id/roundProgressBar1"
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="78dp"
-
-
         android_custom:roundColor="#D1D1D1"
         android_custom:roundProgressColor="@android:color/black"
         android_custom:textColor="#9A32CD"
         android_custom:textIsDisplayable="false"
         android_custom:roundWidth="10dip"
         android_custom:textSize="18sp"/>
+
+
+        <com.winding.password.widget.WaveProgressView
+            android:id="@+id/wpv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:start_angle="135"
+            app:sweep_angle="270"
+            app:wave_color="#ff0"
+            app:wave_bg_color="#f0f"
+            app:bar_width="20dp"
+
+            />
+
 
 
 </LinearLayout>
