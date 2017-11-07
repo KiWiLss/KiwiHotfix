@@ -39,5 +39,9 @@
        android:layout_height="wrap_content"
        android:text="自定义通知"
        android:onClick="customReviewClick"/>
-
+   <Button
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="wave"
+       android:onClick="waveReviewClick"/>
 </LinearLayout>

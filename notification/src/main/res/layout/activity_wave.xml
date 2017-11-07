@@ -8,5 +8,5 @@
         android:id="@+id/glv"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:backgroundImage="@drawable/bg1" />
+        app:backgroundImage="@mipmap/sunset" />
 </LinearLayout>

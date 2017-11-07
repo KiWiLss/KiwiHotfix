@@ -14,6 +14,8 @@ import android.view.View;
 import android.widget.RemoteViews;
 import android.widget.TextView;
 
+import com.winding.notification.activity.WaveActivity;
+
 public class MainActivity extends AppCompatActivity {
 
     public static final String TAG = "MMM";
@@ -135,5 +137,10 @@ public class MainActivity extends AppCompatActivity {
         notification.flags = Notification.FLAG_AUTO_CANCEL;
 
         mNcm.notify(0, notification);
+    }
+
+
+    public void waveReviewClick(View view) {
+        startActivity(new Intent(this,WaveActivity.class));
     }
 }

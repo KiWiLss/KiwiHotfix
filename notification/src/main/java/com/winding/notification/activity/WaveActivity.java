@@ -18,6 +18,6 @@ public class WaveActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_wave);
         GLRippleView glRippleView = (GLRippleView) findViewById(R.id.glv);
-        glRippleView.setRippleOffset(0.5f);//设置波纹波动频率
+        glRippleView.setRippleOffset(0.005f);//设置波纹波动频率
     }
 }
