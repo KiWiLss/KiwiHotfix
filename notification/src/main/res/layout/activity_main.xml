@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.winding.notification.MainActivity"
+    android:orientation="vertical"
+    android:background="#f00f">
+
+   <TextView
+       android:id="@+id/tv_main_text"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:text="测试手机主题颜色"/>
+   <Button
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="一般样式"
+       android:onClick="defaultClick"/>
+   <Button
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="可跳转"
+       android:onClick="intentClick"/>
+   <Button
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="取消通知"
+       android:onClick="cancelClick"/>
+   <Button
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="大视图通知"
+       android:onClick="bigReviewClick"/>
+
+   <Button
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="自定义通知"
+       android:onClick="customReviewClick"/>
+</LinearLayout>

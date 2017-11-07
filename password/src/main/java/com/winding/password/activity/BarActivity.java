@@ -98,4 +98,8 @@ public class BarActivity extends AppCompatActivity {
         super.onDestroy();
         mCrt.cancel();
     }
+
+    public void showNormalNotifi(View view) {
+
+    }
 }

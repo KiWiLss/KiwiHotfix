@@ -47,4 +47,5 @@ dependencies {
     compile 'com.orhanobut:logger:2.1.1'
 
     compile 'com.dinuscxj:circleprogressbar:1.1.1'
+
 }

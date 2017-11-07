@@ -1,1 +1,1 @@
-include ':app', ':libraryzxing', ':collesing', ':scrolling', ':password'
+include ':app', ':libraryzxing', ':collesing', ':scrolling', ':password', ':notification'
