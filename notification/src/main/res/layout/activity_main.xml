@@ -39,4 +39,5 @@
        android:layout_height="wrap_content"
        android:text="自定义通知"
        android:onClick="customReviewClick"/>
+
 </LinearLayout>

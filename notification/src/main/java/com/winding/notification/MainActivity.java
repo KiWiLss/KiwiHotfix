@@ -36,9 +36,10 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void defaultClick(View view) {
-        createNotifi();
+        startActivity(new Intent(this,NotifiActivity.class));
+        //createNotifi();
     }
-    public void createNotifi(){
+    public void createNotifi(){//一般的通知
         //获取通知的构造器
         NotificationCompat.Builder builder = new NotificationCompat.Builder(this);
         builder.setContentTitle("标题")//设置通知的标题
@@ -58,7 +59,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-    public void intentClick(View view) {
+    public void intentClick(View view) {//带意图的通知
         Intent intent = new Intent();
         intent.setAction("android.intent.action.Notifi");
         intent.putExtra("key","values");
@@ -85,7 +86,7 @@ public class MainActivity extends AppCompatActivity {
                 //mNcm.cancelAll();//取消所有
     }
 
-    public void bigReviewClick(View view) {
+    public void bigReviewClick(View view) {//大视图通知
         NotificationCompat.Builder builder = new NotificationCompat.Builder(this);
         Notification notification = builder.setTicker("设置滚动提示的文字")
                 .setContentTitle("标题")//设置通知的标题
@@ -108,7 +109,7 @@ public class MainActivity extends AppCompatActivity {
         mNcm.notify(3,notification);//发送通知
     }
 
-    public void customReviewClick(View view) {
+    public void customReviewClick(View view) {//自定义通知
         NotificationCompat.Builder builder = new NotificationCompat.Builder(this);
 
         builder.setTicker("状态栏通知");//状态栏通知内容

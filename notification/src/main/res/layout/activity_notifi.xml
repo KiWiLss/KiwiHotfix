@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
     android:layout_height="match_parent">
 
     <TextView
@@ -8,5 +10,29 @@
         android:layout_height="wrap_content"
         android:text="notifi"/>
 
+
+    <com.winding.notification.widget.PaletteImageView
+        android:id="@+id/palette"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        app:palettePadding="20dp"
+        app:paletteOffsetX="15dp"
+        app:paletteOffsetY="15dp"
+        app:paletteRadius="10dp"
+        app:paletteSrc="@mipmap/sea"
+        app:paletteShadowRadius="10dp"
+        />
+
+    <com.winding.notification.widget.PaletteImageView
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        app:palettePadding="10dp"
+        app:paletteOffsetX="5dp"
+        app:paletteOffsetY="5dp"
+        app:paletteRadius="5dp"
+        app:paletteShadowRadius="10dp"
+        app:paletteSrc="@mipmap/lotus"
+        android:layout_marginTop="20dp"
+        />
 
 </LinearLayout>
