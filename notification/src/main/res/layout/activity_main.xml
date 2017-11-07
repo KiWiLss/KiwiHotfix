@@ -44,4 +44,9 @@
        android:layout_height="wrap_content"
        android:text="wave"
        android:onClick="waveReviewClick"/>
+   <Button
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="viewpager"
+       android:onClick="viewPagerReviewClick"/>
 </LinearLayout>

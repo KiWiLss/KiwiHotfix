@@ -14,6 +14,7 @@ import android.view.View;
 import android.widget.RemoteViews;
 import android.widget.TextView;
 
+import com.winding.notification.activity.VpActivity;
 import com.winding.notification.activity.WaveActivity;
 
 public class MainActivity extends AppCompatActivity {
@@ -142,5 +143,9 @@ public class MainActivity extends AppCompatActivity {
 
     public void waveReviewClick(View view) {
         startActivity(new Intent(this,WaveActivity.class));
+    }
+
+    public void viewPagerReviewClick(View view) {
+        startActivity(new Intent(this,VpActivity.class));
     }
 }
